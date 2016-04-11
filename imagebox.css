@@ -1,0 +1,46 @@
+@charset "utf-8";
+/*样式重置*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin: 0;padding:0;}
+table{border-collapse: collapse;border-spacing: 0;}
+fieldset,img{border: 0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style: normal;font-weight:normal;}
+ol,ul{list-style: none;}
+caption,th{text-align: left;}
+h1,h2,h3,h4,h5,h6{font-size: 100%;font-weight: normal;}
+q:before,q:after{content:;}
+abbr,acronym{border:0;}
+body{font: 12px/1.5 '微软雅黑',tahoma,arial,'Hiragino Sans GB',宋体，sans-serif;}
+.clearfix:after{visibility: :hidden;display: block;font-size: 0;content: "";clear: both;height: 0;}
+.clearfix{zoom: 1;}
+.text-ellipsis{white-space: nowrap;/*设置不折行*/text-overflow:text-ellipsis;/*这就是省略号*/-o-text-overflow:text-ellipsis;overflow: hidden;}
+
+.js-imagebox{ 
+	float: left;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	margin-left: 10px;
+	border: 1px solid #eee;
+}
+.js-imagebox img{ 
+	position: absolute;
+	left: 50%;
+	top: 0;
+	z-index: 1;
+}
+.js-imagebox i{ 
+	background-color:#000;
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+	font-size: 15px;
+	color: #fff;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	cursor: pointer;
+}
